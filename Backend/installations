@@ -1,0 +1,11 @@
+npm i express
+npm i bcrypt
+npm i mongoose
+npm i express-validator
+npm i cors 
+npm i jsonwebtoken
+npm i dotenv
+npm i express-async-handler
+npm i nodemon
+
+Refer package.json for more information
