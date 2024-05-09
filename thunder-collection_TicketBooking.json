@@ -1,0 +1,84 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "TicketBooking",
+    "collectionId": "8ddfee10-8b3d-4c68-8eee-25ee2d1edd31",
+    "dateExported": "2024-05-09T14:37:08.888Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3afb0862-576f-4bc8-aaaf-646c4ec4e9b5",
+            "colId": "8ddfee10-8b3d-4c68-8eee-25ee2d1edd31",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-05-09T10:23:48.461Z",
+            "modified": "2024-05-09T13:55:16.731Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"password\":\"123456\",\n  \"email\":\"test1@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9b4a5d82-6261-449f-b742-4aeb7940f65c",
+            "colId": "8ddfee10-8b3d-4c68-8eee-25ee2d1edd31",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://localhost:5000/api/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-09T10:24:17.047Z",
+            "modified": "2024-05-09T13:14:26.786Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"test\",\n  \"password\":\"123456\",\n  \"email\":\"test2@gmail.com\",\n  \"lastName\":\"test\",\n  \"location\":\"Benguluru\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "1e57ccce-3891-4f26-8f01-8a7996f56f59",
+            "colId": "8ddfee10-8b3d-4c68-8eee-25ee2d1edd31",
+            "containerId": "",
+            "name": "BookTicket",
+            "url": "http://localhost:5000/api/book/ticket",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-09T10:55:52.935Z",
+            "modified": "2024-05-09T14:30:13.220Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjNjYTQ5YzY4MDJiZWVhNzAzYmZjMjciLCJpYXQiOjE3MTUyNjI5MTYsImV4cCI6MTcxNzg1NDkxNn0.PuL_unx_7rDbxkWfSKahO3UaDOxhbck9Wq65n8m7aR8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"663ccc321a684f3b02257ffe\", \n  \"screen\": \"Screen 1\", \n  \"bookedSeats\": [6,4,5] \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e2a08b37-fcbf-453c-a98e-ce33b6e0b9e1",
+            "colId": "8ddfee10-8b3d-4c68-8eee-25ee2d1edd31",
+            "containerId": "",
+            "name": "GetAvailableTickets",
+            "url": "http://localhost:5000/api/book/available-seats",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-05-09T13:33:16.928Z",
+            "modified": "2024-05-09T13:33:25.763Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjNjY2MzMjFhNjg0ZjNiMDIyNTdmZmUiLCJpYXQiOjE3MTUyNjA0NjYsImV4cCI6MTcxNzg1MjQ2Nn0.O5SKd5dT_mrIDC3RJ9IE_xkI12YI0ECAYy4sct8rV0M"
+                }
+            ]
+        }
+    ],
+    "ref": "pV3TLYoNP-3qIWiunAhslRuPP8xWbLQ6kyemmiGADYOIrYLl73x1ZrESwemRQ-o_OxCeVWAhwXdURdiivnt4Zw"
+}
