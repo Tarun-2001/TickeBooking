@@ -20,6 +20,7 @@ const SignUp = () => {
       body: JSON.stringify({
         email: credentials.email,
         password: credentials.password,
+        name:credentials.name
       }),
     });
     const res = await response.json();
@@ -38,7 +39,7 @@ const SignUp = () => {
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email">Username:</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
             id="email"
@@ -68,7 +69,7 @@ const SignUp = () => {
             onChange={handleChange}
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">Register</button>
       </form>
     </div>
   );

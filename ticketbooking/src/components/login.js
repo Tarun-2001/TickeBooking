@@ -7,6 +7,9 @@ const Login = () => {
   const handleChange = (e) => {
     setcredentials({ ...credentials, [e.target.name]: e.target.value });
   };
+  const handleTest = (e)=>{
+    setcredentials({email:'test1@gmail.com',password:'123456'})
+  }
 
   const [credentials, setcredentials] = useState({ email: '', password: '' });
 
@@ -23,8 +26,8 @@ const Login = () => {
       }),
     });
     const res = await response.json();
-    console.log(res);
-    if (res.statusCode !== '401') {
+    console.log(response);
+    if (response.status!==401) {
       localStorage.setItem('token', res.token);
       navigate('/book');
     } else {
@@ -60,6 +63,8 @@ const Login = () => {
         </div>
         <button type="submit">Login</button>
       </form>
+      <button type='submit' onClick={()=>navigate('/signup')}>SignUp</button>
+      <button type="submit" onClick={handleTest}>TestUser</button>
     </div>
   );
 };

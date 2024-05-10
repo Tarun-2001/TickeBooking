@@ -91,7 +91,7 @@ const BookingScreen = () => {
         </select>
       </div>
       <div>
-        <label htmlFor="seatInput">Enter Seat Number (1-10):</label>
+        <label htmlFor="seatInput">Enter Seat Number (1-10) Ex - 1,2,3 : </label>
         <input
           type="text"
           id="seatInput"
