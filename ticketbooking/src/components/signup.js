@@ -25,12 +25,12 @@ const SignUp = () => {
     });
     const res = await response.json();
     console.log(res);
-    if (res.statusCode !== '401') {
+    if (response.status==201) {
       localStorage.setItem('token', res.token);
       alert('Register succesfully');
       navigate('/book');
     } else {
-      alert('invalid login');
+      alert('Register unsuccessfully');
     }
   };
 
